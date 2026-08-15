@@ -1,68 +1,49 @@
-<h1 align="center"> Hello There 👋 </h1>
+# 🚀 Center 9 Education - Showcase Projects
 
+Chào mừng bạn đến với kho lưu trữ chính thức của **Center 9 Education**! Đây là không gian trưng bày và lưu trữ các dự án lập trình sáng tạo được thực hiện bởi các học viên tài năng của chúng tôi.
 
-* Chào mừng đến với [Project by MindX School](https://mindx.edu.vn/)	 . MindX Technology School - Trường học công nghệ liên cấp ĐẦU TIÊN và DUY NHẤT tại Việt Nam
+---
 
-*  Đến với MindX ngay nhé :fireworks: [MindX School](https://bit.ly/3isOutz)
+## 🌟 Về Center 9 Education
 
+**Center 9 Education** là trung tâm đào tạo lập trình và tư duy công nghệ dành riêng cho trẻ em. Chúng tôi hướng tới việc khơi dậy niềm đam mê công nghệ, rèn luyện tư duy logic và giúp các bạn nhỏ tự tay kiến tạo nên thế giới số thông qua các ngôn ngữ lập trình trực quan và hiện đại.
 
-## Sản phẩm mẫu các khóa học tại MindX
+- 💡 **Sứ mệnh:** Biến ý tưởng của các "lập trình viên nhí" thành hiện thực.
+- 🎯 **Phương pháp:** Học thông qua thực hành dự án (Project-based learning), phát triển tư duy giải quyết vấn đề và kỹ năng làm việc nhóm.
 
-<br>
-<table>
-<tbody>
- <tr>
-<td align="center" width="20%">
- <span><b><center><a href="https://mindxdoc.github.io/SB">Scratch Basic</a></center></b></span> 
-<img height=60px src="https://resources.mindx.edu.vn/uploads/images/Artboard%2014.jpg"> 
-</td>
+---
 
-<td align="center" width="20%">
-<span><b><center><a href="https://mindxdoc.github.io/SA">Scratch Advanced</a></center></b></span> 
-<img height=60px src="https://resources.mindx.edu.vn/uploads/images/Artboard%2015.jpg"> 
-</td>
+## 💻 Danh mục Dự án của Học viên
 
-<td align="center" width="20%">
-<span><b><center><a href="https://mindxdoc.github.io/SI">Scratch Intensive</a></center></b></span> 
-<img height=60px src="https://resources.mindx.edu.vn/uploads/images/Artboard%2016.jpg"> 
-</td>
-</tr>
+> 🚧 **Đang cập nhật:** Các dự án đầu tiên đang trong quá trình hoàn thiện và kiểm thử. Danh sách sản phẩm nổi bật sẽ sớm được cập nhật tại đây!
 
-<tr>
-<td align="center" width="20%">
-<span><b><center><a href="https://mindxdoc.github.io/GB">Game Basic</a></center></b></span> 
-<img height=65px src="https://resources.mindx.edu.vn/uploads/images/Artboard%2010.jpg"> 
-</td>
+| STT | Tên Dự Án | Tác Giả | Công Nghệ / Nền Tảng | Demo / Source |
+| :---: | :--- | :--- | :--- | :---: |
+| 01 | *Đang cập nhật...* | *Học viên Center 9* | *Scratch / Python / Web* | [Xem ngay](#) |
+| 02 | *Đang cập nhật...* | *Học viên Center 9* | *Scratch / Python / Web* | [Xem ngay](#) |
 
-<td align="center" width="20%">
-<span><b><center><a href="https://mindxdoc.github.io/GA">Game Advanced</a></center></b></span> 
-<img height=65px src="https://resources.mindx.edu.vn/uploads/images/Artboard%208.jpg"> 
-</td>
+---
 
-<td align="center" width="20%">
-<span><b><center><a href="https://mindxdoc.github.io/GI">Game Intensive</a></center></b></span> 
-<img height=65px src="https://resources.mindx.edu.vn/uploads/images/Artboard%209.jpg"> 
-</td>
-</tr>
+## 🛠️ Công nghệ giảng dạy & Học tập
 
-<tr>
-<td align="center" width="20%">
-<span><b><center><a href="https://mindxdoc.github.io/WB">Web Basic</a></center></b></span> 
-<img height=65px src="https://resources.mindx.edu.vn/uploads/images/Artboard%2012.jpg"> 
-</td>
+Các dự án tại Center 9 Education được phát triển đa dạng trên nhiều nền tảng phù hợp với từng lứa tuổi:
 
-<td align="center" width="20%">
-<span><b><center><a href="https://mindxdoc.github.io/WA">Web Advanced</a></center></b></span> 
-<img height=65px src="https://resources.mindx.edu.vn/uploads/images/Artboard%2011.jpg"> 
-</td>
+- **Khối cơ bản:** Scratch, Lập trình Kodu, Game Design trực quan.
+- **Khối nâng cao:** Python (Game dev, Pygame), Web Development (HTML/CSS/JavaScript), Thuật toán & Tư duy lập trình.
 
+---
 
+## 📬 Kết nối với chúng tôi
 
-<td align="center" width="20%">
-<span><b><center><a href="https://mindxdoc.github.io/WI">Web Intensive</a></center></b></span> 
-<img height=65px src="https://resources.mindx.edu.vn/uploads/images/web%20intensive.jpg"> 
-</td>
-</tr>
+Nếu bạn quan tâm đến lộ trình học tập hoặc các dự án của học viên, hãy liên hệ với **Center 9 Education**:
 
-</tbody>
-</table>
+- 🌐 **Website:** [Đang cập nhật link]
+- 📘 **Fanpage:** [Đang cập nhật link]
+- 📧 **Email:** [contact@center9education.edu.vn]
+- 📍 **Địa chỉ:** [Hà Nội, Việt Nam]
+
+---
+
+<p align="center">
+  <i>Made with ❤️ by the mentors & students at Center 9 Education</i>
+</p>
