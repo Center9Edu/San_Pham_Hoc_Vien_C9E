@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MindX Documentation</title>
+  <link rel="icon" href="https://mindx.edu.vn/static/images/favicon.png" type="image/x-icon" />
+  <style>
+    .dark-mode {
+      --navbar-color: #fff;
+      --text-color: #333;
+      --bkg-color: #eee;
+      --bg-btn-color: #333;
+      --btn-color: #eee;
+    }
+
+    :root {
+      --navbar-color: #15202b;
+      --text-color: #fff;
+      --bkg-color: #212e3a;
+      --bg-btn-color: #f7ca00;
+      --btn-color: #222;
+    }
+
+    * {
+      box-sizing: border-box;
+      transition: background-color 0.4s ease, color 0.3s ease;
+    }
+
+    body {
+      text-align: center;
+      background-color: var(--bkg-color);
+      color: var(--text-color);
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 1.5rem 2rem;
+      background-color: var(--navbar-color);
+      transition: top 500ms ease-in-out;
+    }
+
+    nav img {
+      width: 120px;
+      height: auto;
+      border-radius: 0;
+      object-fit: contain;
+    }
+
+    nav.scroll-up {
+      top: 0;
+    }
+
+    nav.scroll-down {
+      top: -100%;
+    }
+
+    nav.scroll-up,
+    nav:focus-within {
+      top: 0;
+    }
+
+    .links button {
+      background-color: var(--bg-btn-color);
+      color: var(--btn-color);
+    }
+
+    /* ------ Content ------ */
+    h1 a {
+      text-decoration: none;
+      border-bottom: 0;
+    }
+
+    a span {
+      color: red;
+    }
+
+    a {
+      text-decoration: none;
+      text-align: center;
+      color: #000;
+    }
+
+    a:hover {
+      color: #777;
+    }
+
+    a span:hover {
+      color: red;
+    }
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      border-radius: 12px;
+      height: 214px;
+    }
+
+    #container {
+      max-width: 360px;
+
+      /* Center the container in middle on horizontal axis */
+      margin: 0 auto;
+
+      /* Add empty space above the container (20% of the view height) */
+      margin-top: 5vh;
+    }
+
+    .card {
+      /* Change background color */
+      background-color: white;
+
+      /* Add border */
+      border: 1px solid #bacdd8;
+
+      /* Add space between the border and the content */
+      padding: 8px;
+
+      border-radius: 12px;
+    }
+
+    /* Style div elements that have class equal to tag */
+    .tag {
+      padding: 4px 8px;
+      border: 1px solid #e5eaed;
+
+      border-radius: 50px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #788697;
+    }
+
+    /* Style div elements that have class equal to name */
+    .name {
+      font-size: 24px;
+      font-weight: 600;
+      color: #333;
+      margin-top: 16px;
+    }
+
+    /* Style p element */
+    p {
+      font-size: 14px;
+      color: #7f8c9b;
+      line-height: 150%;
+    }
+
+    /* Style button element */
+    button {
+      border: none;
+      padding: 12px 24px;
+      border-radius: 50px;
+
+      font-weight: 600;
+      color: #0077ff;
+      background-color: #e0efff;
+
+      /* Button is inline-block element by default, it need to have block display for margin: 0 auto; to work */
+      margin: 0 auto;
+      display: block;
+
+      /* Button is a clickable element, therefore it should have a pointer cursor */
+      cursor: pointer;
+    }
+
+    .card__details {
+      /* Add space around the details */
+      padding: 16px 8px 8px 8px;
+    }
+
+    /* Add style when button is focused or hovered */
+    button:hover {
+      background-color: #0077ff;
+      color: #e0efff;
+    }
+
+    section {
+      margin: 0rem 3rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      text-transform: uppercase;
+      margin: 2rem 3rem;
+      border-bottom: 1px solid #bbb;
+    }
+
+    h2 {
+      color: green;
+      font-size: 1.5rem;
+      margin: 0 0 0 15px;
+      text-transform: uppercase;
+    }
+
+    .responsive ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-gap: 0.5rem;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0rem;
+      padding: 0rem 1rem;
+    }
+
+    footer {
+      padding: 1% 5%;
+      margin-top: 2rem;
+      text-align: center;
+      background-color: #373b44;
+      color: white;
+    }
+
+    footer a {
+      color: #fe4b74;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    @media (max-width: 550px) {
+
+      h1,
+      h2 {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 1250px) and (min-width: 550px) {
+
+      h1,
+      h2 {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <a href="https://github.com/Center9Edu"><img id="logo" src="white_ngang.png" alt="Logo" /></a>
+    </div>
+    <div class="links">
+      <a href="#" style="color: #0077ff; font-size: 1rem">Get in touch</a>
+      <br />
+      <br />
+      <button onclick="switchTheme()">Change theme</button>
+    </div>
+  </nav>
+  <h1>
+    <a href="https://github.com/Center9Edu">
+      Center 9 Education
+  </h1>
+
+  <section class="responsive">
+    <h2>Thư viện project mẫu được giảng dạy tại Center 9 Education</h2>
+    <ul class="grid-container">
+      <!-- A div with container id to hold the card -->
+      <div id="container">
+        <!-- A div with card class for the card  -->
+        <div class="card">
+          <img src="https://resources.mindx.edu.vn/uploads/images/2212%20THUMBNAIL%20WEB-10.jpg" alt="Scratch Basic" />
+
+          <!-- A div with card__details class to hold the details in the card  -->
+          <div class="card__details">
+            <!-- Span with tag class for the tag -->
+            <span class="tag">SCRATCH</span>
+
+            <span class="tag">BASIC</span>
+
+            <!-- A div with name class for the name of the card -->
+            <div class="name">SCRATCH BASIC</div>
+
+            <p>
+              Khoá học lập trình trực quan Scratch cơ bản cho các bạn từ 8 đến
+              11 tuổi
+            </p>
+
+            <a href="#"><button>Tham khảo sản phẩm mẫu</button></a>
+          </div>
+        </div>
+      </div>
+
+      <div id="container">
+        <!-- A div with card class for the card  -->
+        <div class="card">
+          <img src="https://resources.mindx.edu.vn/uploads/images/2212%20THUMBNAIL%20WEB-11.jpg"
+            alt="Scratch Advanced" />
+
+          <!-- A div with card__details class to hold the details in the card  -->
+          <div class="card__details">
+            <!-- Span with tag class for the tag -->
+            <span class="tag">SCRATCH</span>
+
+            <span class="tag">ADVANCED</span>
+
+            <!-- A div with name class for the name of the card -->
+            <div class="name">SCRATCH ADVANCED</div>
+
+            <p>
+              Khoá học lập trình trực quan Scratch nâng cao cho các bạn từ 8
+              đến 11 tuổi
+            </p>
+
+            <a href="#"><button>Tham khảo sản phẩm mẫu</button></a>
+          </div>
+        </div>
+      </div>
+
+      <div id="container">
+        <!-- A div with card class for the card  -->
+        <div class="card">
+          <img src="https://resources.mindx.edu.vn/uploads/images/2212%20THUMBNAIL%20WEB-12.jpg"
+            alt="Scratch Intensive" />
+
+          <!-- A div with card__details class to hold the details in the card  -->
+          <div class="card__details">
+            <!-- Span with tag class for the tag -->
+            <span class="tag">SCRATCH</span>
+
+            <span class="tag">INTENSIVE</span>
+
+            <!-- A div with name class for the name of the card -->
+            <div class="name">SCRATCH INTENSIVE</div>
+
+            <p>
+              Khoá học lập trình trực quan Scratch chuyên sâu cho các bạn từ 8
+              đến 11 tuổi
+            </p>
+
+            <a href="#""><button>Tham khảo sản phẩm mẫu</button></a>
+          </div>
+        </div>
+      </div>
+
+      <div id=" container">
+              <!-- A div with card class for the card  -->
+              <div class="card">
+                <img src="https://resources.mindx.edu.vn/uploads/images/Artboard%2010.jpg" alt="Game Basic" />
+
+                <!-- A div with card__details class to hold the details in the card  -->
+                <div class="card__details">
+                  <!-- Span with tag class for the tag -->
+                  <span class="tag">GAME</span>
+
+                  <span class="tag">BASIC</span>
+
+                  <!-- A div with name class for the name of the card -->
+                  <div class="name">GAME BASIC</div>
+
+                  <p>
+                    Khoá học lập trình game GAME MAKER STUDIO cơ bản cho các bạn từ
+                    10 đến 14 tuổi
+                  </p>
+
+                  <a href="#"><button>Tham khảo sản phẩm mẫu</button></a>
+                </div>
+              </div>
+          </div>
+
+          <div id="container">
+            <!-- A div with card class for the card  -->
+            <div class="card">
+              <img src="https://resources.mindx.edu.vn/uploads/images/Artboard%208.jpg" alt="Game Advanced" />
+
+              <!-- A div with card__details class to hold the details in the card  -->
+              <div class="card__details">
+                <!-- Span with tag class for the tag -->
+                <span class="tag">GAME</span>
+
+                <span class="tag">ADVANCED</span>
+
+                <!-- A div with name class for the name of the card -->
+                <div class="name">GAME ADVANCED</div>
+
+                <p>
+                  Khoá học lập trình game GAME MAKER STUDIO nâng cao cho các bạn
+                  từ 10 đến 14 tuổi
+                </p>
+
+                <a href="#"><button>Tham khảo sản phẩm mẫu</button></a>
+              </div>
+            </div>
+          </div>
+
+          <div id="container">
+            <!-- A div with card class for the card  -->
+            <div class="card">
+              <img src="https://resources.mindx.edu.vn/uploads/images/Artboard%209.jpg" alt="Game Intensive" />
+
+              <!-- A div with card__details class to hold the details in the card  -->
+              <div class="card__details">
+                <!-- Span with tag class for the tag -->
+                <span class="tag">GAME</span>
+
+                <span class="tag">INTENSIVE</span>
+
+                <!-- A div with name class for the name of the card -->
+                <div class="name">GAME INTENSIVE</div>
+
+                <p>
+                  Khoá học lập trình game GAME MAKER STUDIO chuyên sâu cho các bạn
+                  từ 10 đến 14 tuổi
+                </p>
+
+                <a href="#"><button>Tham khảo sản phẩm mẫu</button></a>
+              </div>
+            </div>
+          </div>
+
+          <div id="container">
+            <!-- A div with card class for the card  -->
+            <div class="card">
+              <img src="https://resources.mindx.edu.vn/uploads/images/Artboard%2012.jpg" alt="Web Basic" />
+
+              <!-- A div with card__details class to hold the details in the card  -->
+              <div class="card__details">
+                <!-- Span with tag class for the tag -->
+                <span class="tag">WEB</span>
+
+                <span class="tag">BASIC</span>
+
+                <!-- A div with name class for the name of the card -->
+                <div class="name">WEB BASIC</div>
+
+                <p>Khoá học lập trình Web cơ bản cho các bạn từ 14 đến 18 tuổi</p>
+
+                <a href="#"><button>Tham khảo sản phẩm mẫu</button></a>
+              </div>
+            </div>
+          </div>
+
+          <div id="container">
+            <!-- A div with card class for the card  -->
+            <div class="card">
+              <img src="https://resources.mindx.edu.vn/uploads/images/Artboard%2011.jpg" alt="Web Advanced" />
+
+              <!-- A div with card__details class to hold the details in the card  -->
+              <div class="card__details">
+                <!-- Span with tag class for the tag -->
+                <span class="tag">WEB</span>
+
+                <span class="tag">ADVANCED</span>
+
+                <!-- A div with name class for the name of the card -->
+                <div class="name">WEB ADVANCED</div>
+
+                <p>
+                  Khoá học lập trình Web nâng cao cho các bạn từ 14 đến 18 tuổi
+                </p>
+
+                <a href="#"><button>Tham khảo sản phẩm mẫu</button></a>
+              </div>
+            </div>
+          </div>
+
+          <div id="container">
+            <!-- A div with card class for the card  -->
+            <div class="card">
+              <img src="https://resources.mindx.edu.vn/uploads/images/web%20intensive.jpg" alt="Web Intensive" />
+
+              <!-- A div with card__details class to hold the details in the card  -->
+              <div class="card__details">
+                <!-- Span with tag class for the tag -->
+                <span class="tag">WEB</span>
+
+                <span class="tag">INTENSIVE</span>
+
+                <!-- A div with name class for the name of the card -->
+                <div class="name">WEB INTENSIVE</div>
+
+                <p>
+                  Khoá học lập trình Web chuyên sâu cho các bạn từ 14 đến 18 tuổi
+                </p>
+
+                <a href="#"><button>Tham khảo sản phẩm mẫu</button></a>
+              </div>
+            </div>
+          </div>
+    </ul>
+  </section>
+
+  <footer>
+    Made by
+    <a href="https://github.com/Center9Edu">Center 9 Education</a>
+  </footer>
+
+  <script>
+    let previousScrollPosition = 0;
+
+    const isScrollingDown = () => {
+      let currentScrolledPosition = window.scrollY || window.pageYOffset;
+      let scrollingDown;
+
+      if (currentScrolledPosition > previousScrollPosition) {
+        scrollingDown = true;
+      } else {
+        scrollingDown = false;
+      }
+      previousScrollPosition = currentScrolledPosition;
+      return scrollingDown;
+    };
+
+    const nav = document.querySelector("nav");
+
+    const handleNavScroll = () => {
+      if (isScrollingDown() && !nav.contains(document.activeElement)) {
+        nav.classList.add("scroll-down");
+        nav.classList.remove("scroll-up");
+      } else {
+        nav.classList.add("scroll-up");
+        nav.classList.remove("scroll-down");
+      }
+    };
+
+    // initialize a throttleWait variable
+    var throttleWait;
+
+    const throttle = (callback, time) => {
+      // if the variable is true, don't run the function
+      if (throttleWait) return;
+
+      // set the wait variable to true to pause the function
+      throttleWait = true;
+
+      // use setTimeout to run the function within the specified time
+      setTimeout(() => {
+        callback();
+
+        // set throttleWait to false once the timer is up to restart the throttle function
+        throttleWait = false;
+      }, time);
+    };
+
+    window.addEventListener("scroll", () => {
+      throttle(handleNavScroll, 250);
+    });
+
+    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+    window.addEventListener("scroll", () => {
+      if (mediaQuery && !mediaQuery.matches) {
+        throttle(handleNavScroll, 250);
+      }
+    });
+
+    // change dark-mode
+
+    const imgDark = "white_ngang.png";
+    const imgLight = "https://mindx.edu.vn/images/logo.png";
+    let logo = document.getElementById("logo");
+
+    function switchTheme() {
+      document.body.classList.toggle("dark-mode");
+      if (document.body.classList.contains("dark-mode")) {
+        logo.src = imgLight;
+      } else {
+        logo.src = imgDark;
+      }
+    }
+  </script>
+</body>
+
+</html>
