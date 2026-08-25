@@ -19,8 +19,8 @@ Chào mừng bạn đến với kho lưu trữ chính thức của **Center 9 Ed
 
 | STT | Tên Dự Án | Tác Giả | Công Nghệ / Nền Tảng | Demo / Source |
 | :---: | :--- | :--- | :--- | :---: |
-| 01 | *Đang cập nhật...* | *Học viên Center 9* | *Scratch / Python / Web* | [Xem ngay](https://github.com/Center9Edu) |
-| 02 | *Đang cập nhật...* | *Học viên Center 9* | *Scratch / Python / Web* | [Xem ngay](https://github.com/Center9Edu) |
+| 01 | *Đang cập nhật...* | *Học viên Center 9* | *Scratch / Web Development/ Data & AI*| |
+| 02 | *Đang cập nhật...* | *Học viên Center 9* | *Scratch / Web Development/ Data & AI*| |
 
 ---
 
@@ -37,10 +37,10 @@ Các dự án tại Center 9 Education được phát triển đa dạng trên n
 
 Nếu bạn quan tâm đến lộ trình học tập hoặc các dự án của học viên, hãy liên hệ với **Center 9 Education**:
 
-- **Website:** [Đang cập nhật link](https://github.com/Center9Edu)
-- **Fanpage:** [Đang cập nhật link](https://github.com/Center9Edu)
-- **Email:** [contact@center9education.edu.vn](https://github.com/Center9Edu)
-- **Địa chỉ:** [Hà Nội, Việt Nam](https://github.com/Center9Edu)
+- **Website:** [Đang cập nhật link]
+- **Fanpage:** [Center 9 Education](https://www.facebook.com/Center9Edu)
+- **Email:** center9education.c9e@gmail.com
+- **Địa chỉ:** Hà Nội, Việt Nam
 
 ---
 
