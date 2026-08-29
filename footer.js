@@ -80,7 +80,7 @@ const footerHTML = `
     </a>
   </div>
 
-  <p class="footer-copy">&copy; 2025 Center 9 Education. All rights reserved.</p>
+  <p class="footer-copy">&copy; 2026 Center 9 Education. All rights reserved.</p>
 </div>
 `;
 
